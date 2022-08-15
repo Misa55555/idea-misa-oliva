@@ -9,7 +9,7 @@
         width: 220px;
       }
       .titulo-header {
-        color: white ;
+        color: $col-letras-nav;
       }
     }
     .nav-general-ul {
@@ -30,7 +30,7 @@
     .nav-li-a {
       text-decoration: none;
       font-size: large;
-      color: white;
+      color: $col-letras-nav;
     } 
    }
   
