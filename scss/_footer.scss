@@ -1,0 +1,31 @@
+.footer-inicio {
+  background-color: #deb887;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  .footer-uno {
+    margin-left: 10px;
+    .footer-ul-li-a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .footer-dos {
+    margin-top: 16px;
+    margin-left: 10px;
+    .footer-ul-li-a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .footer-tres {
+    text-align: center;
+    .gm {
+      font-size: 30px;
+    }
+  }
+  .footer-cuatro {
+    text-align: center;
+  }
+  }
+  
