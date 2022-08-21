@@ -1,0 +1,104 @@
+.main-reservas {
+    background: url(../img/reserva/fondo-reservas.jpg);
+ .h1-reservas {
+    text-align: center;
+    color: black;
+}
+ .h2-reservas {
+    text-align: center;
+    color: black;
+}
+ .contenedor-h3-p-reservas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 4rem;
+    .p-contenedor-reservas {
+        border-top: 3px solid yellow;
+        border-radius: 20%
+    }
+    .h2-reservas {
+        color: black;
+        margin: 1px;
+        font-size: 25px;
+    }
+}
+.h3-reservas {
+    text-align: center;
+    color: black;
+    margin: 30px;
+    font-size: 30px;
+}
+.contenedor-form-reservas {
+    margin-left: 30%;
+    width: 50%;
+.form-datos-reserva {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    color: black;
+    }
+    .input-reservas {
+        padding: 10px;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        background: transparent; /* agregar hover */
+        color: black;
+        border-radius: 5%;
+    }
+}
+.contenedor-texto-completar {
+    text-align: center;
+    .texto-completar {
+        width: 400px;
+        margin-left: 180px;
+        margin-top: 30px;
+        height: 180px;
+        background: transparent;
+        color: white;
+        padding: 10px;
+        }
+    }
+    .contenedor-boton-presupuesto {
+        text-align: center;
+    .boton-presupuesto {
+        width: 400px;
+        margin-left: 181px;
+        margin-top: 20px;
+        height: 50px;
+        border-radius: 80px; 
+        background-color: pink;
+        .boton-presupuesto::after {
+            content: "cosas que pasan";
+        }
+        }
+    }
+    .contendor-ubicacion-mapa-inframe {
+        margin-left: 20px;
+        margin-top: 190px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgba(27, 24, 24, 0.9);
+        .contenedor-datos {
+            margin-top: 70px;
+        .contendor-datos-h3 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .hijo-datos-secundarios {
+            display: grid;
+            margin-top: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            .hijos-datos {
+                .datos-spam {
+                    color: blue;
+                }
+            }
+        } 
+      } 
+    }
+}
