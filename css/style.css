@@ -370,15 +370,8 @@
   margin: 30px;
   font-size: 30px;
 }
-.main-reservas .contenedor-form-reservas {
-  margin-left: 30%;
-  width: 50%;
-}
 .main-reservas .contenedor-form-reservas .form-datos-reserva {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
   color: black;
 }
 .main-reservas .contenedor-form-reservas .input-reservas {
@@ -394,57 +387,62 @@
   text-align: center;
 }
 .main-reservas .contenedor-texto-completar .texto-completar {
-  width: 400px;
-  margin-left: 180px;
+  width: 300px;
   margin-top: 30px;
   height: 180px;
   background: transparent;
-  color: white;
+  color: black;
   padding: 10px;
 }
-.main-reservas .contenedor-boton-presupuesto {
+
+.contenedor-boton-presupuesto {
   text-align: center;
 }
-.main-reservas .contenedor-boton-presupuesto .boton-presupuesto {
-  width: 400px;
-  margin-left: 181px;
-  margin-top: 20px;
+.contenedor-boton-presupuesto .boton-presupuesto {
+  width: 50%;
+  margin-top: 50px;
   height: 50px;
   border-radius: 80px;
   background-color: pink;
 }
-.main-reservas .contenedor-boton-presupuesto .boton-presupuesto .boton-presupuesto::after {
-  content: "cosas que pasan";
-}
-.main-reservas .contendor-ubicacion-mapa-inframe {
-  margin-left: 20px;
+
+.contendor-ubicacion-mapa-inframe {
   margin-top: 190px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   background-color: rgba(27, 24, 24, 0.9);
 }
-.main-reservas .contendor-ubicacion-mapa-inframe .contenedor-datos {
+.contendor-ubicacion-mapa-inframe .contenedor-inframe {
+  text-align: center;
+}
+@media screen and (min-width: 600px) and (max-width: 810px) {
+  .contendor-ubicacion-mapa-inframe .inframe-mapa {
+    margin-top: 50px;
+    width: 570px;
+  }
+}
+@media screen and (min-width: 810px) and (max-width: 3000px) {
+  .contendor-ubicacion-mapa-inframe .inframe-mapa {
+    margin-top: 100px;
+    width: 800px;
+  }
+}
+.contendor-ubicacion-mapa-inframe .contenedor-datos {
   margin-top: 70px;
 }
-.main-reservas .contendor-ubicacion-mapa-inframe .contenedor-datos .contendor-datos-h3 {
+.contendor-ubicacion-mapa-inframe .contenedor-datos .contendor-datos-h3 {
   text-align: center;
   font-size: 2.5em;
 }
-.main-reservas .contendor-ubicacion-mapa-inframe .contenedor-datos .hijo-datos-secundarios {
+.contendor-ubicacion-mapa-inframe .contenedor-datos .hijo-datos-secundarios {
+  text-align: center;
   display: grid;
   margin-top: 50px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
 }
-.main-reservas .contendor-ubicacion-mapa-inframe .contenedor-datos .hijo-datos-secundarios .hijos-datos .datos-spam {
-  color: blue;
-}
-
-@media screen and (min-width: 400px) and (max-width: 913px) {
-  .main-reservas .contendor-ubicacion-mapa-inframe {
-    margin-left: 20px;
-    margin-top: 190px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(211, 9, 9, 0.9);
-  }
+.contendor-ubicacion-mapa-inframe .contenedor-datos .hijo-datos-secundarios .hijos-datos .datos-spam {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

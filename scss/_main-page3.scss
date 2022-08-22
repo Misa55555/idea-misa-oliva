@@ -32,13 +32,8 @@
     font-size: 30px;
 }
 .contenedor-form-reservas {
-    margin-left: 30%;
-    width: 50%;
 .form-datos-reserva {
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
     color: black;
     }
     .input-reservas {
@@ -54,35 +49,46 @@
 .contenedor-texto-completar {
     text-align: center;
     .texto-completar {
-        width: 400px;
-        margin-left: 180px;
+        width: 300px;
         margin-top: 30px;
         height: 180px;
         background: transparent;
-        color: white;
+        color: black;
         padding: 10px;
         }
+      }
     }
     .contenedor-boton-presupuesto {
         text-align: center;
     .boton-presupuesto {
-        width: 400px;
-        margin-left: 181px;
-        margin-top: 20px;
+        width: 50%;
+        margin-top: 50px;
         height: 50px;
         border-radius: 80px; 
         background-color: pink;
-        .boton-presupuesto::after {
-            content: "cosas que pasan";
-        }
-        }
+       }
     }
     .contendor-ubicacion-mapa-inframe {
-        margin-left: 20px;
         margin-top: 190px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
         background-color: rgba(27, 24, 24, 0.9);
+        .contenedor-inframe {
+            text-align: center;
+          }
+          @media screen and (min-width: 600px) and (max-width:810px) {
+            .inframe-mapa {
+                margin-top: 50px;
+                width: 570px;
+            }
+        }
+          @media screen and (min-width: 810px) and (max-width:3000px) {
+            .inframe-mapa {
+                margin-top: 100px;
+                width: 800px;
+            }
+        }
         .contenedor-datos {
             margin-top: 70px;
         .contendor-datos-h3 {
@@ -90,15 +96,19 @@
             font-size: 2.5em;
         }
         .hijo-datos-secundarios {
+            text-align: center;
             display: grid;
             margin-top: 50px;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
             .hijos-datos {
                 .datos-spam {
-                    color: blue;
+                    color: red;
                 }
             }
         } 
-      } 
+      }
     }
-}
+
+
