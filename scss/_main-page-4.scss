@@ -1,0 +1,123 @@
+@mixin h-chef {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 30px;
+}
+@mixin general-chef {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+}
+@mixin general-chef-2 {
+            border-top: 3px solid blue;
+            border-bottom: 3px solid blue; 
+}
+.main-personas {
+    .h1-chef {
+        @include h-chef();
+    }
+    .h2-chef {
+        @include h-chef();
+    }
+    .h4-mozos {
+        @include h-chef();
+    }
+    .contenedor-chef {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .general-chef {
+            @include general-chef();
+            .imagenchefs {
+                width: 300px;
+            }
+            .general-texto-chef {
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+        }
+        .general-chef-2 {
+            @include general-chef-2(); 
+        }
+    }
+    @media screen and (min-width: 880px) and (max-width:3000px) {
+        .contenedor-chef {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            .general-chef {
+                @include general-chef();
+                .imagenchefs {
+                    width: 300px;
+                }
+                .general-texto-chef {
+                    text-align: end;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+           .general-chef-2 {
+            @include general-chef-2(); 
+            }
+            .general-chef-2 {
+                @include general-chef-2(); 
+            } 
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width:450px) {
+        .contenedor-chef {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            .general-chef {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                border-top: 3px solid red;
+                border-bottom: 3px solid red;
+                .imagenchefs {
+                    width: 300px;
+                }
+                .general-texto-chef {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 30px;
+                }
+            }
+            .general-chef-2 {
+                @include general-chef-2(); 
+            }
+        }
+    }
+}
+
+/*.contenedor-chef {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .general-chef {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+            .imagenchefs {
+                width: 300px;
+            }
+            .general-texto-chef {
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    } */ 

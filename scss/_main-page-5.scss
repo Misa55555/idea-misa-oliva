@@ -1,0 +1,45 @@
+.main-extra {
+    .h1-apk {
+        text-align: center;
+        margin-top: 40px;
+        animation: h1extra 3s 1s ease-in-out infinite;
+    }
+    @keyframes h1extra {
+        0% {
+            color: black;
+            border-top: 1px solid rgb(55, 0, 255);
+        }
+        25% {
+            color:  #333;
+            border-left: 1px solid rgb(23, 9, 73);
+        }
+        50% {
+            color: rgb(107, 103, 103);
+            border-right: 1px solid rgb(18, 3, 75)
+        }
+        75% {
+            color: rgb(143, 140, 140);
+        }
+        100% {
+            color: black;
+            border-top: 1px solid rgb(73, 32, 221);
+        }
+    }
+    .contenedor-apk {
+        background-color: rgb(250, 250, 250);
+        .h2-apk {
+            text-align: center;
+            margin-top: 20px;
+            .a-apk {
+                color: skyblue;
+            }
+        }
+        .apk-img-playstore {
+            text-align: center;
+        }
+       .apk-img-apple {
+        text-align: center;
+        margin-top: 50px;
+       } 
+    }
+}

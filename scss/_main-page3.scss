@@ -1,12 +1,14 @@
-.main-reservas {
-    background: url(../img/reserva/fondo-reservas.jpg);
- .h1-reservas {
+@mixin h-reservas {
     text-align: center;
     color: black;
 }
+.main-reservas {
+    background: url(../img/reserva/fondo-reservas.jpg);
+ .h1-reservas {
+    @include h-reservas();
+}
  .h2-reservas {
-    text-align: center;
-    color: black;
+    @include h-reservas();
 }
  .contenedor-h3-p-reservas {
     display: grid;
@@ -26,15 +28,13 @@
     }
 }
 .h3-reservas {
-    text-align: center;
-    color: black;
+    @include h-reservas();
     margin: 30px;
     font-size: 30px;
 }
 .contenedor-form-reservas {
 .form-datos-reserva {
-    text-align: center;
-    color: black;
+    @include h-reservas();
     }
     .input-reservas {
         padding: 10px;

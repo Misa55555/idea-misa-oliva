@@ -80,6 +80,9 @@
   margin-top: 16px;
   margin-left: 10px;
 }
+.footer-inicio .footer-dos .redes-footer-img {
+  width: 50px;
+}
 .footer-inicio .footer-dos .footer-ul-li-a {
   text-decoration: none;
   color: black;
@@ -94,6 +97,8 @@
   text-align: center;
 }
 
+/* div 1: SLADER */
+/* div 1: SLADER */
 /* div 1: SLADER */
 .main-inicio {
   background-color: black;
@@ -189,20 +194,6 @@
   .main-text1 {
     width: 30% auto;
     text-align: center;
-    margin-left: 26%;
-    margin-right: 26%;
-    margin-top: 20px;
-    background-color: orangered;
-    border-radius: 7%;
-    letter-spacing: 1.5;
-    line-height: 50px;
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 668px) and (max-width: 1000px) {
-  .main-text1 {
-    width: 30% auto;
-    text-align: center;
     margin-left: 16%;
     margin-right: 16%;
     margin-top: 20px;
@@ -210,6 +201,20 @@
     border-radius: 7%;
     letter-spacing: 1;
     line-height: 30px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 2000px) {
+  .main-text1 {
+    width: 30% auto;
+    text-align: center;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-top: 20px;
+    background-color: orangered;
+    border-radius: 7%;
+    letter-spacing: 1.5;
+    line-height: 50px;
     font-size: 1.2em;
   }
 }
@@ -445,4 +450,191 @@
 }
 .contendor-ubicacion-mapa-inframe .contenedor-datos .hijo-datos-secundarios .hijos-datos .datos-spam {
   color: red;
+}
+
+.main-personas .h1-chef {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+.main-personas .h2-chef {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+.main-personas .h4-mozos {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+.main-personas .contenedor-chef {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.main-personas .contenedor-chef .general-chef {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+}
+.main-personas .contenedor-chef .general-chef .imagenchefs {
+  width: 300px;
+}
+.main-personas .contenedor-chef .general-chef .general-texto-chef {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-personas .contenedor-chef .general-chef-2 {
+  border-top: 3px solid blue;
+  border-bottom: 3px solid blue;
+}
+@media screen and (min-width: 880px) and (max-width: 3000px) {
+  .main-personas .contenedor-chef {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .main-personas .contenedor-chef .general-chef {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+  }
+  .main-personas .contenedor-chef .general-chef .imagenchefs {
+    width: 300px;
+  }
+  .main-personas .contenedor-chef .general-chef .general-texto-chef {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-personas .contenedor-chef .general-chef-2 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+  }
+  .main-personas .contenedor-chef .general-chef-2 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .main-personas .contenedor-chef {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main-personas .contenedor-chef .general-chef {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+  }
+  .main-personas .contenedor-chef .general-chef .imagenchefs {
+    width: 300px;
+  }
+  .main-personas .contenedor-chef .general-chef .general-texto-chef {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .main-personas .contenedor-chef .general-chef-2 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+  }
+}
+
+/*.contenedor-chef {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .general-chef {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+            .imagenchefs {
+                width: 300px;
+            }
+            .general-texto-chef {
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    } */
+.main-extra .h1-apk {
+  text-align: center;
+  margin-top: 40px;
+  -webkit-animation: h1extra 3s 1s ease-in-out infinite;
+          animation: h1extra 3s 1s ease-in-out infinite;
+}
+@-webkit-keyframes h1extra {
+  0% {
+    color: black;
+    border-top: 1px solid rgb(55, 0, 255);
+  }
+  25% {
+    color: #333;
+    border-left: 1px solid rgb(23, 9, 73);
+  }
+  50% {
+    color: rgb(107, 103, 103);
+    border-right: 1px solid rgb(18, 3, 75);
+  }
+  75% {
+    color: rgb(143, 140, 140);
+  }
+  100% {
+    color: black;
+    border-top: 1px solid rgb(73, 32, 221);
+  }
+}
+@keyframes h1extra {
+  0% {
+    color: black;
+    border-top: 1px solid rgb(55, 0, 255);
+  }
+  25% {
+    color: #333;
+    border-left: 1px solid rgb(23, 9, 73);
+  }
+  50% {
+    color: rgb(107, 103, 103);
+    border-right: 1px solid rgb(18, 3, 75);
+  }
+  75% {
+    color: rgb(143, 140, 140);
+  }
+  100% {
+    color: black;
+    border-top: 1px solid rgb(73, 32, 221);
+  }
+}
+.main-extra .contenedor-apk {
+  background-color: rgb(250, 250, 250);
+}
+.main-extra .contenedor-apk .h2-apk {
+  text-align: center;
+  margin-top: 20px;
+}
+.main-extra .contenedor-apk .h2-apk .a-apk {
+  color: skyblue;
+}
+.main-extra .contenedor-apk .apk-img-playstore {
+  text-align: center;
+}
+.main-extra .contenedor-apk .apk-img-apple {
+  text-align: center;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
