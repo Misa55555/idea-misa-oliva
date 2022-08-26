@@ -16,6 +16,7 @@
 .main-personas {
     .h1-chef {
         @include h-chef();
+        border-bottom: 9px outset green;
     }
     .h2-chef {
         @include h-chef();

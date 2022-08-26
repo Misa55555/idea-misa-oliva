@@ -1,6 +1,4 @@
 /* div 1: SLADER */                    
-                    /* div 1: SLADER */
-/* div 1: SLADER */                    
 .main-inicio {
   background-color: $colorMainPrin;
   .slider-frame {
@@ -50,38 +48,87 @@
     letter-spacing: 0.09em;
     font-size: 1.2em;
   }
-}
-  @media screen and (min-width: 1001px) and (max-width: 2000px){
-    .main-text1 {
-      width: 30% auto;
-      text-align: center;
-      margin-left: 16%;
-      margin-right: 16%;
-      margin-top: 20px;
-      background-color: $col-fondo-nuestraPacion;
-      border-radius: 7%;
-      letter-spacing: 1;
-      line-height: 30px;
-      font-size: 1.2em;
+  .banner-food {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: 0.1s all ease-in-out;
+    .img-banner-food {
+      width: 100%;
+      height: 100%;
+      opacity: 80%;
     }
+    .p-banner-food {
+      color: rgb(0, 0, 0);
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      text-shadow: 0 0 8px rgba(1,1, 1, 0.8);
+    }
+    .a-p-banner {
+      text-decoration: none;
+      animation: pbanner 1s 1s infinite ease-in;
+      font-size: 2rem;
+    .banner-food {
+      .a-p-banner {
+      text-decoration: none;
+      animation: pbanner 1s 1s infinite ease-in;
+      font-size: 500px;
+     }
+  }
+}
+    }
+    @keyframes pbanner {
+      0% {
+        color: black;
+      }
+      75% {
+        color: green;
+      }
+      50% {
+        color: red;
+      }
+      75% {
+        color: blue;
+      }
+    }
+  }
+  .banner-food:hover {
+    transform: scale(1);
+    border-radius: 30%;
   }
   @media screen and (min-width: 1001px) and (max-width: 2000px){
     .main-text1 {
+      background-color: red;
       width: 30% auto;
       text-align: center;
       margin-left: 26%;
       margin-right: 26%;
       margin-top: 20px;
-      background-color: $col-fondo-nuestraPacion;
       border-radius: 7%;
       letter-spacing: 1.5;
       line-height: 50px;
       font-size: 1.2em;
     }
   }
-
-
-
+  @media screen and (min-width: 800px) and (max-width: 2000px) {
+    .banner-food {
+      .p-banner-food {
+        .a-p-banner {
+          display: inline-block;
+          position: relative;
+          font-weight: 900;
+          right: 20px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-style: italic;
+          font-size: 4rem;
+        }
+      } 
+    }
+  }
 
 
 
